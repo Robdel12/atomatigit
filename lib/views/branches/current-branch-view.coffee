@@ -40,8 +40,9 @@ class CurrentBranchView extends View
 
   # Public: Trigger a repaint.
   repaint: =>
-    @name.html("#{@model.name}")
-    @commit.html("(#{@model.commit.shortID?()}: #{@model.commit.shortMessage?()})")
+    @icon = '<span class="icon icon-git-merge"></span>';
+    @name.html("#{@icon} #{@model.name}")
+    @commit.html("#{@model.commit.shortID?()}: #{@model.commit.shortMessage?()}")
     @updateComparison()
 
     @commit.removeClass 'unpushed'
