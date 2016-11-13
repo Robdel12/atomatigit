@@ -6,13 +6,15 @@ FileView = require './file-view'
 # Public: Represents the file list view with an individual list for staged,
 #         unstaged and untracked files.
 class FileListView extends View
-  @content: ->
+  @content: (params) ->
     @div class: 'file-list-view list-view', tabindex: -1, =>
-      @h2 outlet: 'untrackedHeader', 'untracked:'
+      @h2 outlet: 'untrackedHeader', 'Untracked files:'
       @div class: 'untracked', outlet: 'untracked'
-      @h2 outlet: 'unstagedHeader', 'unstaged:'
+
+      @h2 outlet: 'unstagedHeader', 'Unstaged changes:'
       @div class: 'unstaged', outlet: 'unstaged'
-      @h2 outlet: 'stagedHeader', 'staged:'
+
+      @h2 outlet: 'stagedHeader', 'Staged changes:'
       @div class: 'staged', outlet: 'staged'
 
   # Public: Constructor.

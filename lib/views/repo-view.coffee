@@ -12,7 +12,6 @@ class RepoView extends View
   @content: (model) ->
     @div class: 'atomatigit', =>
       @div class: 'resize-handle', outlet: 'resizeHandle'
-      @subview 'currentBranchView', new CurrentBranchView(model)
 
       @ul class: 'list-inline tab-bar inset-panel', =>
         @li outlet: 'fileTab', class: 'tab active', click: 'showFiles', =>
@@ -26,6 +25,7 @@ class RepoView extends View
         @subview 'fileListView', new FileListView(model.fileList)
         @subview 'branchListView', new BranchListView(model.branchList)
         @subview 'commitListView', new CommitListView(model.commitList)
+      @subview 'currentBranchView', new CurrentBranchView(model)
 
   # Public: Constructor.
   initialize: (@model) ->
