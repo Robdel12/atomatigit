@@ -1,9 +1,9 @@
 {
-  "name": "atomatigit",
+  "name": "atomatigit-robdel12",
   "main": "./lib/atomatigit",
-  "version": "1.5.5",
+  "version": "0.0.1",
   "description": "Full git interaction, a la magit",
-  "repository": "https://github.com/diiq/atomatigit",
+  "repository": "https://github.com/robdel12/atomatigit-robdel12",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
