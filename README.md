@@ -1,5 +1,9 @@
 # atomatigit
 
+### Note
+
+This is a fork of [diiq/atomatigit](https://github.com/diiq/atomatigit). The only big difference is this one has style & layout changes to fit my atom theme.
+
 Real git integration for the Atom text editor.
 
 Atomatigit allows you to see diffs, stage chunks, make commits, push, fetch,
@@ -15,8 +19,7 @@ can navigate through 100% of atomatigit's functions without a mouse.
 Atomatigit is inspired by the
 [magit](http://magit.github.io/index.html) emacs package.
 
-![screenshot: file list](http://i.imgur.com/rRk5sSy.png)
-![screenshot: dark theme; branch list; context menu](http://i.imgur.com/axszNyW.png)
+![demo screenshot](http://i.imgur.com/MHkZiKy.png)
 
 ## Installing
 Using `apm`:
